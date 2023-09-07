@@ -12,6 +12,8 @@ namespace Lab10Ex2.Models
         public string Model { get; set; }
         public string SerieSasiu { get; set; }
         public int AnFabricatie { get; set; }
+
+        public int ProducatorId { get; set; }
         public Producator Producator { get; set; }
 
         public override string ToString() => $"{Id} | {Model} | {AnFabricatie} | {Producator}";

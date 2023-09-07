@@ -11,6 +11,8 @@ namespace Lab10Ex2.Models
     {
         public DbSet<Autovehicul> Autovehicul { get; set; }
 
+        public DbSet<Producator> Producator { get; set; }
+
         public AutovehiculDbContext()
         {
             Database.EnsureCreated();

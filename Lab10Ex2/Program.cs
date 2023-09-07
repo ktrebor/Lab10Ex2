@@ -1,6 +1,11 @@
 ﻿using Lab10Ex2.Models;
 
-Seed();
+//Seed();
+
+using var ctx = new AutovehiculDbContext();
+
+var vehiclesByYear = ctx.Autovehicul.OrderByDescending(e => e.AnFabricatie).ToList();
+
 static void Seed()
 {
     using var ctx = new AutovehiculDbContext();
